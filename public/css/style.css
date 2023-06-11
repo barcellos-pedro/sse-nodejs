@@ -1,0 +1,58 @@
+:root {
+    color-scheme: 'light dark';
+}
+
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: lightgoldenrodyellow;
+    }
+
+    h1,
+    p {
+        color: initial;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
+
+    h1,
+    p {
+        color: white;
+    }
+}
+
+body {
+    padding: 0 2em;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    gap: 1em
+}
+
+h1,
+p {
+    font-size: 2em;
+}
+
+input {
+    padding: .5em;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: 4px;
+}
