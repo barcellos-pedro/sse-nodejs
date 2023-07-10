@@ -14,6 +14,7 @@ const eventActions = {
     eventSource.close();
   },
   onMessage(event) {
+    console.log('event\n', event)
     messageElement.textContent += ` ${event.data}`;
   },
 };

@@ -14,7 +14,6 @@ async function getEvent(req, res) {
   while (words.length) {
     await sleep();
     const word = words.splice(0, 1);
-    res.write("event: answer\n\n");
     res.write(`data: ${word}\n\n`);
   }
 
